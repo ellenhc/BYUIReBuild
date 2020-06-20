@@ -1,0 +1,183 @@
+//Variables
+$sm-break: 48em;
+
+main {
+    margin: 0 2%;
+}
+
+.ready-container {
+    margin: 36px 0;
+}
+
+.large-img {
+    display: none;
+}
+
+.interest-container {
+    display: grid;
+    grid-row-gap: 36px;
+    margin-bottom: 36px;
+
+    .interest-box figure {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.dropdown {
+    button {
+        padding: 10px 18px;
+        width: 100%;
+        margin-bottom: 36px;
+    }
+}
+
+.resource-links {
+    margin-bottom: 36px;
+
+    h3 {
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    div a {
+        padding: 8px 20px;
+        display: block;
+    }
+}
+
+.important-dates {
+    h3 {
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    .date-links a {
+        display: grid;
+        grid-template-columns: 0.5fr 0.25fr 2fr;
+        padding: 8px 20px;
+    }
+}
+
+.newsroom {
+    margin-bottom: 36px;
+
+    img {
+        display: none;
+    }
+
+    article {
+        padding: 25px 0;
+    }
+
+    article h4 {
+        margin: 18px 0 12px 0;
+    }
+
+    .article-blurb {
+        margin: 0 0 12px 0;
+    }
+}
+
+.university-message {
+    h5 {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        margin: 0;
+        padding: 12px 16px;
+    }
+
+    .msg-univ {
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        padding: 7px;
+    }
+}
+
+/*Footer*/
+footer {
+    .footer-graphic::before {
+        background: url(https://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic.gif) bottom no-repeat;
+        content: "";
+        display: block;
+        height: 146px;
+        padding: 0;
+    }
+    .footer-graphic::after {
+        content: "";
+        display: block;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: $sm-break) {
+    .sm-img {
+        display: none;
+    }
+
+    .large-img {
+        display: block;
+    }
+
+    .newsroom img {
+        display: block;
+    }
+
+    main {
+        max-width: 94%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 69% 29%;
+        grid-column-gap: 2%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .ready-container {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .interest-container {
+        grid-column: 1;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+    }
+
+    .newsroom {
+        grid-column: 1;
+        grid-row: 4;
+
+        article:first-child {
+            border-top: 1px solid #b4b3b5;
+        }
+
+        article {
+            display: grid;
+            grid-template-columns: 23% 73%;
+            grid-column-gap: 2%;
+        }
+    }
+
+    .dropdown {
+        margin-top: 36px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .resource-links {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .important-dates {
+        grid-column: 2;
+        grid-row: 3 / 4;
+    }
+
+    .university-message {
+        grid-column: 2;
+        grid-row: 4;
+    }
+}

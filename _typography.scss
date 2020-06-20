@@ -3,14 +3,11 @@
   font-style: normal;
   font-weight: 300;
   src: local('Open Sans Light'), local('OpenSans-Light'),
-    url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQzyDMXhdD8sAj6OAJTFsBI.woff2)
-      format('woff2');
+    url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
   src: local('Open Sans Light'), local('OpenSans-Light'),
-    url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRsxEYwM7FgeyaSgU71cLG0.woff)
-      format('woff');
+    url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
   src: local('Open Sans Light'), local('OpenSans-Light'),
-    url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTcDdSZkkecOE1hvV7ZHvhyU.ttf)
-      format('truetype');
+    url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTcDdSZkkecOE1hvV7ZHvhyU.ttf) format('truetype');
 }
 
 @font-face {
@@ -18,12 +15,121 @@
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'),
-    url(https://fonts.gstatic.com/s/opensans/v13/TCmDhmS1RRL7aqhqZW19hwLUuEpTyoUstqEm5AMlJo4.woff2)
-      format('woff2');
+    url(https://fonts.gstatic.com/s/opensans/v13/TCmDhmS1RRL7aqhqZW19hwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
   src: local('Open Sans'), local('OpenSans'),
-    url(https://fonts.gstatic.com/s/opensans/v13/uYKcPVoh6c5R0NpdEY5A-Q.woff)
-      format('woff');
+    url(https://fonts.gstatic.com/s/opensans/v13/uYKcPVoh6c5R0NpdEY5A-Q.woff) format('woff');
   src: local('Open Sans'), local('OpenSans'),
-    url(https://fonts.gstatic.com/s/opensans/v13/yYRnAC2KygoXnEC8IdU0gQLUuEpTyoUstqEm5AMlJo4.ttf)
-      format('truetype');
+    url(https://fonts.gstatic.com/s/opensans/v13/yYRnAC2KygoXnEC8IdU0gQLUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
+}
+
+//Variables
+$sm-break: 48em;
+
+
+body {
+  font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
+}
+
+header {
+
+  .icon-byui-logo,
+  .mobile-header-icon {
+    font-size: 30px;
+  }
+
+  .site-banner a {
+    text-decoration: none;
+  }
+
+  .site-title h1 a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
+
+.interest-container {
+  .interest-box a {
+    text-decoration: none;
+  }
+
+  .interest-box figure figcaption {
+    padding: 6px 12px;
+  }
+}
+
+.dropdown {
+  button {
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+
+.resource-links {
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  div a {
+    text-decoration: none;
+  }
+}
+
+.important-dates {
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .date-links a {
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .highlights-link div:first-child {
+    font-weight: 700;
+  }
+}
+
+.newsroom {
+  .article-date {
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  h4 a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .btn {
+    text-decoration: none;
+  }
+
+  .article-blurb {
+    font-size: 15px;
+  }
+}
+
+.university-message {
+  h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .msg-univ {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $sm-break) {
+  header {
+    .site-title h1 a {
+      font-size: 30px;
+    }
+  }
 }

@@ -1,70 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Brigham Young University - Idaho</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="site-banner white-text">
-        <div class="site-banner__left">
-          <a href="#"
-            ><span aria-hidden="true" class="icon-byui-logo">
+<head>
+  <meta charset="utf-8" />
+  <title>Brigham Young University - Idaho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="site-banner">
+      <div class="site-banner__left">
+        <div class="byui-logo">
+          <a href="#"><span aria-hidden="true" class="icon-byui-logo">
               <span class="sr-only">Link to BYU-Idaho home page</span>
-            </span></a
-          >
-          <h1>Home</h1>
+            </span></a>
         </div>
-        <div class="site-banner__right">
-          <a href="http://www.byui.edu/#">
-            <span class="icon-search text-white mobile-header-icon">
-              <span class="sr-only">Search BYU-I</span>
-            </span>
-          </a>
-          <a
-            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
-          >
-            <span class="icon-audience text-white mobile-header-icon">
-              <span class="sr-only">Login</span>
-            </span>
-          </a>
-          <a href="http://www.byui.edu/#">
-            <span class="icon-menu text-white mobile-header-icon">
-              <span class="sr-only">Expand Menu</span>
-            </span>
-          </a>
-        </div>
-        <form
-          aria-label="Search byui.edu"
-          method="get"
-          action="https://www.byui.edu/search/result?"
-          role="search"
-        >
-          <div>
-            <label for="searchDesktop" class="sr-only"
-              >Search BYU-I websites:
-            </label>
-            <input
-              id="searchDesktop"
-              name="q"
-              placeholder="Powered by Google"
-              alt="Search BYU-I websites (powered by Google.com)."
-              type="text"
-            />
-
-            <button type="submit">
-              <span aria-hidden="true" class="icon icon-magnifying-glass ">
-                <span class="sr-only">Submit</span>
-              </span>
-            </button>
-          </div>
-        </form>
+        <!--<h1>Home</h1>-->
       </div>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+      <div class="site-banner__right">
+        <a href="http://www.byui.edu/#">
+          <span class="icon-search mobile-header-icon">
+            <span class="sr-only">Search BYU-I</span>
+          </span>
+        </a>
+        <a
+          href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f">
+          <span class="icon-audience mobile-header-icon">
+            <span class="sr-only">Login</span>
+          </span>
+        </a>
+        <a href="http://www.byui.edu/#">
+          <span class="icon-menu mobile-header-icon">
+            <span class="sr-only">Expand Menu</span>
+          </span>
+        </a>
+      </div>
+      <form aria-label="Search byui.edu" method="get" action="https://www.byui.edu/search/result?" role="search">
+        <div>
+          <label for="searchDesktop" class="sr-only">Search BYU-I websites:
+          </label>
+          <input id="searchDesktop" name="q" placeholder="Powered by Google"
+            alt="Search BYU-I websites (powered by Google.com)." type="text" />
+
+          <button type="submit">
+            <span aria-hidden="true" class="icon icon-magnifying-glass ">
+              <span class="sr-only">Submit</span>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="site-title">
+      <h1><a href="https://www.byui.edu/">Brigham Young University - Idaho</a></h1>
+    </div>
+  </header>
+  <main>
+    <div class="ready-container">
+      <a href="https://www.byui.edu/student-focused/potential-of-every-student">
+        <img src="images/Potential-Gardens-desktop.jpg" alt="Ready to realize my potential" class="large-img">
+        <img src="images/Potential-Gardens-mobile.jpg" alt="Ready to realize my potential" class="sm-img" aria-hidden="true">
+      </a>
+    </div>
+    <div class="interest-container">
+      <div class="interest-box">
+        <a href="http://video.byui.edu">
+          <figure>
+            <img src="images/CampusVideos.jpg">
+            <figcaption>Campus Videos<span class="icon-angle-right float-right" aria-hidden="true"></span></figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="interest-box">
+        <a href="http://photo.byui.edu">
+          <figure>
+            <img src="images/PhotoGallery.jpg">
+            <figcaption>Photo Gallery<span class="icon-angle-right float-right" aria-hidden="true"></span></figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="interest-box">
+        <a href="http://byui.edu/campus-tours">
+          <figure>
+            <img src="images/ExploreCampus.jpg">
+            <figcaption>Explore Campus<span class="icon-angle-right float-right" aria-hidden="true"></span></figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button type="button" class="btn">Get information for:
+        <span class="icon-triangle-down float-right" aria-hidden="true"></span>
+      </button>
+      <!--<ul></ul>-->
+    </div>
+    <aside class="resource-links">
+      <h3>Resources</h3>
+      <div>
+        <a href="admissions/apply" class="highlights-link d-block" target="">Apply Now <span
+            class="icon-angle-right float-right"></span>
+        </a>
+        <a href="financial-aid" class="highlights-link d-block" target="">Financial Aid <span
+            class="icon-angle-right float-right"></span>
+        </a>
+        <a href="http://www.byui.edu/catalog/#/programs" class="highlights-link d-block" target="">Degrees and
+          Programs <span class="icon-angle-right float-right"></span>
+        </a>
+        <a href="housing" class="highlights-link d-block" target="">Student Housing <span
+            class="icon-angle-right float-right"></span>
+        </a>
+        <a href="financial-aid/cost-of-attendance" class="highlights-link d-block" target="">Tuition and Fees <span
+            class="icon-angle-right float-right"></span>
+        </a>
+        <a href="student-records/academic-deadlines" class="highlights-link d-block" target="">Academic Deadlines
+          <span class="icon-angle-right float-right"></span>
+        </a>
+      </div>
+    </aside>
+    <aside class="important-dates">
+      <h3>Important Dates</h3>
+      <div class="date-links">
+        <a href="http://calendar.byui.edu/EventDetails.aspx?data=hHr80o3M7J7uxSNym2dmmRZ9MZ0UDnRt4oJy7FRmLBvjLAvfhXPQAvAOFHlE7%2bSf"
+          class="highlights-link">
+          <div>Jun 23</div>
+          <span> - </span>
+          <div>Devotional - Jason Hunt</div>
+        </a>
+        <a href="http://calendar.byui.edu/EventDetails.aspx?data=hHr80o3M7J7uxSNym2dmmRZ9MZ0UDnRt4oJy7FRmLBuXdTyppoHd6ErOyMxcKyft"
+          class="highlights-link">
+          <div>Jun 30</div>
+          <span> - </span>
+          <div>Devotional - Steve Bunnell</div>
+        </a>
+        <a href="http://calendar.byui.edu/EventDetails.aspx?data=hHr80o3M7J7uxSNym2dmmRZ9MZ0UDnRt4oJy7FRmLBvRxNwFGCHdt0hDhbenKS1W"
+          class="highlights-link">
+          <div>Jul 07</div>
+          <span> - </span>
+          <div>Devotional - Linda Ward</div>
+        </a>
+        <a href="http://calendar.byui.edu/EventDetails.aspx?data=hHr80o3M7J7uxSNym2dmmRZ9MZ0UDnRt4oJy7FRmLBuj7ISSKAX96nPd6Hg3CKe9"
+          class="highlights-link">
+          <div>Jul 14</div>
+          <span> - </span>
+          <div>Devotional - Jim Croasmun</div>
+        </a>
+      </div>
+    </aside>
+    <div class="newsroom clearfix">
+      <article class="clearfix">
+        <img src="images/Campus-Fall-2020.jpg" alt="Campus on fall semester in the afternoon">
+        <div>
+          <div class="article-date">June 17, 2020</div>
+          <h4><a href="newsroom/6-17-20-fall-semester-announcement" target="">Considerations for Fall Semester 2020</a>
+          </h4>
+          <p class="article-blurb">BYU-Idaho evaluates options for students to return to campus fall semester.</p>
+        </div>
+      </article>
+      <article class="clearfix">
+        <img src="images/spring-2020-enrollment.jpg" alt="Girl student sitting on the grass with her computer">
+        <div>
+          <div class="article-date">May 22, 2020</div>
+          <h4><a href="newsroom/5-22-20-spring-2020-enrollment" target="">Enrollment numbers released for Spring 2020
+              Semester</a></h4>
+          <p class="article-blurb">BYU-Idaho spring enrollment numbers show growth despite world-wide pandemic.</p>
+        </div>
+      </article>
+      <article class="clearfix">
+        <img src="images/Christensen.jpg" alt="Elder Craig C. Christensen">
+        <div>
+          <div class="article-date">May 15, 2020</div>
+          <h4><a href="newsroom/5-15-20-winter-2020-commencement" target="">BYU-Idaho announces online commencement
+              ceremony for Winter 2020 graduates</a></h4>
+          <p class="article-blurb">Elder Craig C. Christensen, General Authority Seventy of The Church of Jesus Christ
+            of Latter-day Saints, will address the 2,458 graduates of Brigham Young University-Idaho in an online
+            commencement ceremony.</p>
+        </div>
+      </article>
+      <a href="newsroom" class="btn float-right">Newsroom</a>
+    </div>
+    <aside class="university-message">
+      <h5>University Message</h5>
+      <div class="msg-univ">
+        <a
+          href="https://www.byui.edu/devotionals?utm_source=byui_web_ad&amp;utm_medium=University_Relations&amp;utm_campaign=Devo_mybyui&amp;utm_term=Fall_2019&amp;utm_content=Institutional">
+          <img src="images/Devo_JasonHunt.jpg" alt="Tuesday Stream Devotional with Jason Hunt">
+        </a>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <h2 class="sr-only">Footer</h2>
+    <div class="footer-graphic">
+
+    </div>
+  </footer>
+</body>
+
 </html>

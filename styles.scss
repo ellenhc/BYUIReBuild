@@ -1,14 +1,11 @@
 @import 'typography';
 @import 'icons';
+@import 'colors';
+@import 'navigation';
+@import 'layout';
+@import 'button';
 
 $sm-break: 48em;
-// colors
-$dark-gray: #727272;
-$med-gray: #b4b3b5;
-$light-gray: #eaeaea;
-$body-font: #020202;
-$link-blue: #0076b6; //why do we have both of these blues?
-$byui-blue: #056cb6;
 
 // Utility classes
 *,
@@ -18,8 +15,12 @@ $byui-blue: #056cb6;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+}
 img {
   max-width: 100%;
+  width: 100%;
 }
 .sr-only {
   position: absolute;
@@ -30,4 +31,10 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

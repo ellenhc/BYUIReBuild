@@ -1,0 +1,148 @@
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$title-gray: #525352;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+$hover-blue: #005d90;
+$hover-gray: rgb(226, 230, 234);
+
+body {
+  color: $body-font;
+}
+
+/*Header*/
+.site-banner {
+  background-color: $byui-blue;
+}
+
+.byui-logo {
+  background-color: $body-font;
+}
+
+.mobile-header-icon,
+.icon-byui-logo {
+  color: white;
+}
+
+.site-title {
+  background-color: $light-gray;
+  border-bottom: 1px solid #727272;
+
+  h1 a{
+    color: $title-gray;
+  }
+}
+
+//End of Header
+
+/*Interest Boxes*/
+.interest-container {
+
+  .interest-box a,
+  .interest-box a:hover {
+    color: $link-blue;
+  }
+
+  .interest-box figure {
+    border: 1px solid $med-gray;
+  }
+}
+
+//end of Interest Boxes
+
+/*Resources*/
+.dropdown {
+  button {
+    border: 1px solid $med-gray;
+  }
+}
+
+.resource-links {
+  h3 {
+    border: 1px solid $dark-gray;
+    background-color: $dark-gray;
+    color: white;
+  }
+
+  div a {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid $med-gray;
+    border-left: 1px solid $med-gray;
+    border-right: 1px solid $med-gray;
+    color: $link-blue;
+  }
+  div a:hover {
+    background-color: $hover-gray;
+  }
+}
+
+//end of Resources
+
+/*Important Dates*/
+.important-dates {
+  h3 {
+    border: 1px solid $link-blue;
+    background-color: $link-blue;
+    color: white;
+  }
+
+  .date-links a {
+    color: $body-font;
+  }
+
+  .highlights-link {
+    border-bottom: 1px solid $med-gray;
+  }
+}
+
+//end of Important Dates
+
+/*Newsroom*/
+.newsroom {
+  article {
+    border-top: 1px solid $med-gray;
+  }
+  article:first-child {
+    border-top: none;
+  }
+
+  h4 a {
+    color: $link-blue;
+  }
+
+  .btn {
+    background-color: $link-blue;
+    color: white;
+  }
+  .btn:hover {
+    background-color: $hover-blue;
+  }
+}
+
+//end of Newsroom
+
+/*University Message*/
+.university-message {
+  h5 {
+    border: 1px solid $med-gray;
+    background-color: $light-gray;
+  }
+
+  .msg-univ {
+    border-left: 1px solid $med-gray;
+    border-right: 1px solid $med-gray;
+    border-bottom: 1px solid $med-gray;
+  }
+}
+
+/*Footer*/
+footer {
+  .footer-graphic::after {
+    background-color: $light-gray;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #c6c7c8;
+  }
+}

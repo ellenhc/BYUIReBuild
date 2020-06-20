@@ -1,0 +1,48 @@
+/*Large screen will also use mobile nav this week*/
+$sm-break: 48em;
+
+.site-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    form {
+        display: none;
+    }
+}
+
+.site-banner__right {
+    margin-right: 2%;
+}
+
+.byui-logo {
+    height: 82px;
+    width: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-title {
+    display: flex;
+    justify-content: flex-end;
+
+    h1 a{
+        padding: 15px 0;
+        margin: 0 2% 0 0;
+    }
+}
+
+@media screen and (min-width: $sm-break) {
+    .site-title {
+        display: block;
+        border-bottom: none;
+
+        h1 {
+            padding: 30px 0 15px 0;
+            max-width: 94%;
+            margin: auto;
+            font-size: 30px;
+        }
+    }
+}
