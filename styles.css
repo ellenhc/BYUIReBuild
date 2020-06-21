@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 @font-face {
   font-family: 'BYUI Open Sans';
   font-style: normal;
@@ -31,7 +32,7 @@ header .site-banner a {
 
 header .site-title h1 a {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
 }
 
@@ -90,6 +91,8 @@ header .site-title h1 a {
 
 .newsroom .article-blurb {
   font-size: 15px;
+  line-height: 24px;
+  font-family: 'BYUI Merriweather', 'Merriweather', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
 .university-message h5 {
@@ -1257,22 +1260,21 @@ footer .footer-graphic::after {
 }
 
 .site-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  text-align: center;
+}
+
+.site-title h1 {
+  margin: 0;
+  padding: 15px 10px;
 }
 
 .site-title h1 a {
-  padding: 15px 0;
   margin: 0 2% 0 0;
 }
 
 @media screen and (min-width: 48em) {
   .site-title {
-    display: block;
+    text-align: left;
     border-bottom: none;
   }
   .site-title h1 {
